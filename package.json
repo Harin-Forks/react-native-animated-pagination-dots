@@ -1,7 +1,7 @@
 {
-  "name": "react-native-animated-pagination-dots",
-  "version": "0.1.51",
-  "description": "FlatList animated pagination dots",
+  "name": "react-native-animated-dots",
+  "version": "0.0.1",
+  "description": "FlatList animated pagination dots with colour",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -23,7 +23,6 @@
     "test": "jest",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
@@ -34,13 +33,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/weahforsage/react-native-animated-pagination-dots",
-  "author": "Sanjaajamts Munkhbold <sanjasapple@gmail.com> (https://github.com/weahforsage)",
+  "repository": "https://github.com/Harin329/react-native-animated-pagination-dots",
+  "author": "Harin Wu <harinwu99@gmail.com> (https://github.com/harin329)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weahforsage/react-native-animated-pagination-dots/issues"
+    "url": "https://github.com/Harin329/react-native-animated-pagination-dots/issues"
   },
-  "homepage": "https://github.com/weahforsage/react-native-animated-pagination-dots#readme",
+  "homepage": "https://github.com/Harin329/react-native-animated-pagination-dots#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
@@ -72,12 +71,6 @@
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "commitlint": {
     "extends": [
