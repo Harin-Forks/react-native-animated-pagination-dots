@@ -1,3 +1,6 @@
+# Credit
+Forked off of the great work done @ https://github.com/weahforsage/react-native-animated-pagination-dots. Added colour options for personal use.
+
 # Animated Dots
 <img src="https://raw.githubusercontent.com/weahforsage/react-native-animated-pagination-dots/main/example/AnimatedDots.gif" height="500" alt="Animated Dots Example">
 
@@ -17,13 +20,14 @@ For more Copy & Paste stuff, go check [example](https://github.com/weahforsage/r
 ## Installation
 
 ```sh
-npm install react-native-animated-pagination-dots
+npm install react-native-animated-dots
+yarn add react-native-animated-dots
 ```
 
 ## Usage
 
 ```js
-import {ExpandingDot} from "react-native-animated-pagination-dots";
+import {ExpandingDot} from "react-native-animated-dots";
 
 const SLIDER_DATA = [
   {
@@ -97,6 +101,12 @@ const SLIDER_DATA = [
 <td>In active dot opacity</td>
 </tr>
 <tr>
+<td>inActiveDotColor</td>
+<td>string</td>
+<td><pre>backgroundColor: '#347af0'</pre></td>
+<td>In active dot color</td>
+</tr>
+<tr>
 <td>expandingDotWidth</td>
 <td>number</td>
 <td>20</td>
@@ -161,6 +171,12 @@ const SLIDER_DATA = [
 <td>number</td>
 <td>0.5</td>
 <td>In active dot opacity</td>
+</tr>
+<tr>
+<td>inActiveDotColor</td>
+<td>string</td>
+<td><pre>backgroundColor: '#347af0'</pre></td>
+<td>In active dot color</td>
 </tr>
 <tr>
 <td>data</td>

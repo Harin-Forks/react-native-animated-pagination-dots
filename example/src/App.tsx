@@ -97,16 +97,8 @@ const App = () => {
             expandingDotWidth={30}
             scrollX={scrollX}
             inActiveDotOpacity={0.6}
-            dotStyle={{
-              width: 10,
-              height: 10,
-              backgroundColor: '#347af0',
-              borderRadius: 5,
-              marginHorizontal: 5,
-            }}
-            containerStyle={{
-              top: 30,
-            }}
+            dotStyle={styles.dotStyle}
+            containerStyle={styles.top30}
           />
         </View>
         <View style={styles.dotContainer}>
@@ -114,16 +106,14 @@ const App = () => {
           <ScalingDot
             data={INTRO_DATA}
             scrollX={scrollX}
-            containerStyle={{
-              top: 30,
-            }}
+            containerStyle={styles.top30}
           />
         </View>
 
         <View style={styles.dotContainer}>
           <Text>Sliding Border</Text>
           <SlidingBorder
-            containerStyle={{ top: 30 }}
+            containerStyle={styles.top30}
             data={INTRO_DATA}
             scrollX={scrollX}
             dotSize={24}
@@ -133,7 +123,7 @@ const App = () => {
           <Text>Sliding Dot</Text>
           <SlidingDot
             marginHorizontal={3}
-            containerStyle={{ top: 30 }}
+            containerStyle={styles.top30}
             data={INTRO_DATA}
             scrollX={scrollX}
             dotSize={12}
@@ -194,6 +184,16 @@ const styles = StyleSheet.create({
     height: 10,
     borderRadius: 5,
     margin: 5,
+  },
+  dotStyle: {
+    width: 10,
+    height: 10,
+    backgroundColor: '#347af0',
+    borderRadius: 5,
+    marginHorizontal: 5,
+  },
+  top30: {
+    top: 30,
   },
 });
 

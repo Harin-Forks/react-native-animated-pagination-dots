@@ -29,7 +29,8 @@ const ExpandingDot = ({
   expandingDotWidth,
 }: ExpandingDotProps) => {
   const defaultProps = {
-    inActiveDotColor: inActiveDotColor || dotStyle.backgroundColor.toString(),
+    inActiveDotColor:
+      inActiveDotColor || styles.dotStyle.backgroundColor.toString(),
     inActiveDotOpacity: inActiveDotOpacity || 0.5,
     expandingDotWidth: expandingDotWidth || 20,
     dotWidth: (dotStyle.width as number) || 10,
@@ -48,7 +49,7 @@ const ExpandingDot = ({
           inputRange,
           outputRange: [
             defaultProps.inActiveDotColor,
-            dotStyle.backgroundColor.toString(),
+            styles.dotStyle.backgroundColor.toString(),
             defaultProps.inActiveDotColor,
           ],
           extrapolate: 'clamp',
@@ -75,7 +76,13 @@ const ExpandingDot = ({
         return (
           <Animated.View
             key={`dot-${index}`}
-            style={[styles.dotStyle, dotStyle, { width: expand }, { opacity }, { backgroundColor: colour }]}
+            style={[
+              styles.dotStyle,
+              dotStyle,
+              { width: expand },
+              { opacity },
+              { backgroundColor: colour },
+            ]}
           />
         );
       })}

@@ -29,7 +29,8 @@ const ScalingDot = ({
   activeDotScale,
 }: ScalingDotProps) => {
   const defaultProps = {
-    inActiveDotColor: inActiveDotColor || dotStyle.backgroundColor.toString(),
+    inActiveDotColor:
+      inActiveDotColor || styles.dotStyle.backgroundColor.toString(),
     animationType: 'scale',
     inActiveDotOpacity: inActiveDotOpacity || 0.5,
     activeDotScale: activeDotScale || 1.4,
@@ -48,7 +49,7 @@ const ScalingDot = ({
           inputRange,
           outputRange: [
             defaultProps.inActiveDotColor,
-            dotStyle.backgroundColor.toString(),
+            styles.dotStyle.backgroundColor.toString(),
             defaultProps.inActiveDotColor,
           ],
           extrapolate: 'clamp',
