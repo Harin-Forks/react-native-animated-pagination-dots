@@ -45,11 +45,13 @@ const ExpandingDot = ({
           (index + 1) * width,
         ];
 
+        const s = dotStyle.backgroundColor !== undefined ? dotStyle : styles.dotStyle;
+
         const colour = scrollX.interpolate({
           inputRange,
           outputRange: [
             defaultProps.inActiveDotColor,
-            styles.dotStyle.backgroundColor.toString(),
+            s.backgroundColor.toString(),
             defaultProps.inActiveDotColor,
           ],
           extrapolate: 'clamp',
